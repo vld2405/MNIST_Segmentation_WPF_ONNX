@@ -1,0 +1,58 @@
+﻿<Window x:Class="ONNX_MNIST_Segmentation.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ONNX_MNIST_Segmentation.ViewModels"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Image Segmentation"
+        Height="600"
+        Width="450"
+        ResizeMode="NoResize">
+
+    <Window.DataContext>
+        <local:MainVM/>
+    </Window.DataContext>
+
+    <Grid Margin="10">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Image container -->
+        <Border Grid.Row="0"
+                BorderBrush="LightGray"
+                BorderThickness="2"
+                CornerRadius="8"
+                Margin="10"
+                Background="#FFF9F9F9">
+            <Image Source="{Binding PreviewImageSource}"
+                   Stretch="Uniform"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        </Border>
+
+        <!-- Buttons section -->
+        <StackPanel Grid.Row="1"
+            Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            Margin="0,10,0,0">
+
+            <Button x:Name="UploadButton"
+                Command="{Binding Path=UploadImageCommand}"
+                Content="Upload Image"
+                Padding="12,6"
+                Margin="5,0"/>
+
+            <Button x:Name="SubmitButton"
+                    Command="{Binding Path=SubmitCommand}"
+                    Content="Submit"
+                    Padding="12,6"
+                    Margin="5,0"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
