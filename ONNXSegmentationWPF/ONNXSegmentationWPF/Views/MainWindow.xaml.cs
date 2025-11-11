@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ONNX_MNIST_Segmentation.Views
+namespace ONNXSegmentationWPF.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

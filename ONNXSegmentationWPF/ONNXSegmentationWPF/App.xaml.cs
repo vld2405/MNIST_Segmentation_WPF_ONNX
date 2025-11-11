@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace ONNX_MNIST_Segmentation
+namespace ONNXSegmentationWPF
 {
     /// <summary>
     /// Interaction logic for App.xaml

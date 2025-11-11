@@ -1,7 +1,7 @@
-﻿<Application x:Class="ONNX_MNIST_Segmentation.App"
+﻿<Application x:Class="ONNXSegmentationWPF.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ONNX_MNIST_Segmentation"
+             xmlns:local="clr-namespace:ONNXSegmentationWPF"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
          
